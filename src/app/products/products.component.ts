@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { IProduct } from '../models/IProduct';
 import { ProductItemComponent } from './product-item/product-item.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { TitleComponent } from '../title/title.component';
 
 @Component({
   selector: 'app-products',
-  imports: [ProductItemComponent, ProductListComponent],
+  imports: [ProductItemComponent, ProductListComponent, TitleComponent],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss',
 })

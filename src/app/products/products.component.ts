@@ -11,7 +11,7 @@ import { ProductListComponent } from './product-list/product-list.component';
   styleUrl: './products.component.scss',
 })
 export class ProductsComponent implements OnInit {
-  price: number = 2;
+  price: number = 170 / 100;
 
   ice: IProduct[] = [
     {

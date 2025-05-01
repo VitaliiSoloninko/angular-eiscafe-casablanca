@@ -1,10 +1,17 @@
-<div class="product__item">
-  <div class="image">
-    <img [src]="product.image" alt="Eis" />
+<div class="blog__item item-blog">
+  <div class="item-blog__header">
+    <a href="" class="item-blog__image">
+      <img [src]="product.image" alt="Image" />
+    </a>
+    <a href="" class="item-blog__category">{{
+      product.price | currency : "EUR" : "symbol"
+    }}</a>
   </div>
-  <div class="content">
-    <strong class="name">{{ product.name }}</strong>
-    <div class="description">{{ product.description }}</div>
-    <div class="price">{{ product.price }}</div>
+  <div class="item-blog__body">
+    <h4 class="item-blog__title">
+      <a href="" class="item-blog__link-title">{{
+        product.name | titlecase
+      }}</a>
+    </h4>
   </div>
 </div>

@@ -1,35 +1,8 @@
 <h1 class="center mb16">Eiscafe Casablanca</h1>
 
-<div class="blog__items">
-  <article class="blog__item item-blog">
-    <div class="item-blog__header">
-      <a href="" class="item-blog__image">
-        <img src="/image/ice/vanilla.jpeg" alt="Image" />
-      </a>
-      <a href="" class="item-blog__category">1.70 $</a>
-    </div>
-    <div class="item-blog__body">
-      <h4 class="item-blog__title">
-        <a href="" class="item-blog__link-title">Vanilla</a>
-      </h4>
-    </div>
-  </article>
-  <article class="blog__item item-blog">
-    <div class="item-blog__header">
-      <a href="" class="item-blog__image">
-        <img src="/image/ice/lime.jpeg" alt="Image" />
-      </a>
-      <a href="" class="item-blog__category">1.70 $</a>
-    </div>
-    <div class="item-blog__body">
-      <h4 class="item-blog__title">
-        <a href="" class="item-blog__link-title">Lime</a>
-      </h4>
-    </div>
-  </article>
+<div class="mb16">
+  <app-title [title]="'Ice'" />
 </div>
-
-<app-title [title]="'Ice'" />
 <app-product-list [products]="ice" />
 
 <!-- <app-title [title]="'Lebensmittel'" />

@@ -154,6 +154,62 @@ export class ProductsComponent implements OnInit {
       price: this.price,
       image: '/image/ice/milk-chocolade.jpeg',
     },
+    {
+      id: 21,
+      name: 'white chocolade',
+      description: '',
+      price: this.price,
+      image: '/image/ice/white-chocolate.jpeg',
+    },
+    {
+      id: 22,
+      name: 'lemonade',
+      description: '',
+      price: this.price,
+      image: '/image/ice/lemonade.jpeg',
+    },
+    {
+      id: 23,
+      name: 'forest fruits',
+      description: '',
+      price: this.price,
+      image: '/image/ice/forest-fruits.jpeg',
+    },
+    {
+      id: 24,
+      name: 'yogurt',
+      description: '',
+      price: this.price,
+      image: '/image/ice/yogurt.jpeg',
+    },
+    {
+      id: 25,
+      name: 'apple',
+      description: '',
+      price: this.price,
+      image: '/image/ice/apple.jpeg',
+    },
+    {
+      id: 26,
+      name: 'coffee',
+      description: '',
+      price: this.price,
+      image: '/image/ice/coffee.jpeg',
+    },
+    {
+      id: 27,
+      name: 'hagelnut',
+      description: '',
+      price: this.price,
+      image: '/image/ice/hagelnut.jpeg',
+    },
+    {
+      id: 28,
+      name: 'marshmallow',
+      description: '',
+      price: this.price,
+      image: '/image/ice/marshmallow.jpeg',
+    },
   ];
 
   drinks: IProduct[] = [

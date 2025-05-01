@@ -7,10 +7,17 @@
   font-family: "Poppins";
 }
 
+:root {
+  --main-color: #d7b12f;
+  --main-color-light: #f0e6b2;
+  --dark-color: #0d0d11;
+  --text-color: #9c9c9c;
+}
+
 body {
   font-weight: 300;
-  color: #9c9c9c;
-  background-color: #0d0d11;
+  color: var(--text-color);
+  background-color: var(--dark-color);
 }
 
 a {

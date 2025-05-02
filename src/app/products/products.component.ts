@@ -12,6 +12,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 })
 export class ProductsComponent implements OnInit {
   price: number = 170 / 100;
+  priceDrinks: number = 550 / 100;
 
   ice: IProduct[] = [
     {
@@ -213,9 +214,64 @@ export class ProductsComponent implements OnInit {
   ];
 
   drinks: IProduct[] = [
-    { id: 1, name: 'drink 1', description: '123', price: 200, image: '1' },
-    { id: 2, name: 'drink 2', description: '123', price: 200, image: '1' },
-    { id: 3, name: 'drink 3', description: '123', price: 200, image: '1' },
+    {
+      id: 1,
+      name: 'avocado and banana',
+      description: '123',
+      price: this.priceDrinks,
+      image: '/image/drinks/avocado-and-banana.jpg',
+    },
+    {
+      id: 2,
+      name: 'ananas',
+      description: '123',
+      price: this.priceDrinks,
+      image: '/image/drinks/ananas.jpg',
+    },
+    {
+      id: 3,
+      name: 'kiwi',
+      description: '123',
+      price: this.priceDrinks,
+      image: '/image/drinks/kiwi.jpg',
+    },
+
+    {
+      id: 4,
+      name: 'cucumber',
+      description: '123',
+      price: this.priceDrinks,
+      image: '/image/drinks/cucumber.jpg',
+    },
+    {
+      id: 5,
+      name: 'strawberry',
+      description: '123',
+      price: this.priceDrinks,
+      image: '/image/drinks/strawberry.jpg',
+    },
+    {
+      id: 6,
+      name: 'red-beet',
+      description: '123',
+      price: this.priceDrinks,
+      image: '/image/drinks/red-beet.jpg',
+    },
+    {
+      id: 7,
+      name: 'orange',
+      description: '123',
+      price: this.priceDrinks,
+      image: '/image/drinks/orange.jpg',
+    },
+
+    {
+      id: 8,
+      name: 'soda',
+      description: '123',
+      price: 170 / 100,
+      image: '/image/drinks/soda.jpg',
+    },
   ];
 
   foods: IProduct[] = [

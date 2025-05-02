@@ -12,7 +12,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 })
 export class ProductsComponent implements OnInit {
   price: number = 170 / 100;
-  priceDrinks: number = 550 / 100;
+  priceCocktails: number = 550 / 100;
 
   ice: IProduct[] = [
     {
@@ -213,56 +213,56 @@ export class ProductsComponent implements OnInit {
     },
   ];
 
-  drinks: IProduct[] = [
+  cocktails: IProduct[] = [
     {
       id: 1,
       name: 'avocado and banana',
       description: '123',
-      price: this.priceDrinks,
-      image: '/image/drinks/avocado-and-banana.jpg',
+      price: this.priceCocktails,
+      image: '/image/cocktails/avocado-and-banana.jpg',
     },
     {
       id: 2,
       name: 'ananas',
       description: '123',
-      price: this.priceDrinks,
-      image: '/image/drinks/ananas.jpg',
+      price: this.priceCocktails,
+      image: '/image/cocktails/ananas.jpg',
     },
     {
       id: 3,
       name: 'kiwi',
       description: '123',
-      price: this.priceDrinks,
-      image: '/image/drinks/kiwi.jpg',
+      price: this.priceCocktails,
+      image: '/image/cocktails/kiwi.jpg',
     },
 
     {
       id: 4,
       name: 'cucumber',
       description: '123',
-      price: this.priceDrinks,
-      image: '/image/drinks/cucumber.jpg',
+      price: this.priceCocktails,
+      image: '/image/cocktails/cucumber.jpg',
     },
     {
       id: 5,
       name: 'strawberry',
       description: '123',
-      price: this.priceDrinks,
-      image: '/image/drinks/strawberry.jpg',
+      price: this.priceCocktails,
+      image: '/image/cocktails/strawberry.jpg',
     },
     {
       id: 6,
       name: 'red-beet',
       description: '123',
-      price: this.priceDrinks,
-      image: '/image/drinks/red-beet.jpg',
+      price: this.priceCocktails,
+      image: '/image/cocktails/red-beet.jpg',
     },
     {
       id: 7,
       name: 'orange',
       description: '123',
-      price: this.priceDrinks,
-      image: '/image/drinks/orange.jpg',
+      price: this.priceCocktails,
+      image: '/image/cocktails/orange.jpg',
     },
 
     {
@@ -270,19 +270,91 @@ export class ProductsComponent implements OnInit {
       name: 'soda',
       description: '123',
       price: 170 / 100,
-      image: '/image/drinks/soda.jpg',
+      image: '/image/cocktails/soda.jpg',
+    },
+  ];
+
+  desserts: IProduct[] = [
+    {
+      id: 1,
+      name: 'coffee',
+      description: '',
+      price: 300 / 100,
+      image: '/image/desserts/coffee.jpg',
+    },
+    {
+      id: 2,
+      name: 'cake',
+      description: '',
+      price: 300 / 100,
+      image: '/image/desserts/cake.jpg',
+    },
+    {
+      id: 3,
+      name: 'belgian waffles',
+      description: '',
+      price: 300 / 100,
+      image: '/image/desserts/belgian-waffles.jpg',
+    },
+    {
+      id: 4,
+      name: 'chocolate cake',
+      description: '',
+      price: 300 / 100,
+      image: '/image/desserts/chocolate-cake.jpg',
+    },
+    {
+      id: 5,
+      name: 'cheesecake',
+      description: '',
+      price: 300 / 100,
+      image: '/image/desserts/cheesecake.jpg',
+    },
+    {
+      id: 6,
+      name: 'cappuccino',
+      description: '',
+      price: 300 / 100,
+      image: '/image/desserts/cappuccino.jpg',
+    },
+    {
+      id: 7,
+      name: 'coffee',
+      description: '',
+      price: 300 / 100,
+      image: '/image/desserts/coffee.jpg',
+    },
+    {
+      id: 8,
+      name: 'tea',
+      description: '',
+      price: 300 / 100,
+      image: '/image/desserts/tea.jpg',
     },
   ];
 
   foods: IProduct[] = [
-    { id: 1, name: 'food 1', description: '123', price: 200, image: '1' },
-    { id: 2, name: 'food 2', description: '123', price: 200, image: '1' },
-    { id: 3, name: 'food 3', description: '123', price: 200, image: '1' },
-  ];
-  cocktails: IProduct[] = [
-    { id: 1, name: 'cocktail 1', description: '123', price: 200, image: '1' },
-    { id: 2, name: 'cocktail 2', description: '123', price: 200, image: '1' },
-    { id: 3, name: 'cocktail 3', description: '123', price: 200, image: '1' },
+    {
+      id: 1,
+      name: 'food 1',
+      description: '123',
+      price: 300 / 100,
+      image: '/image/cocktails/avocado-and-banana.jpg',
+    },
+    {
+      id: 2,
+      name: 'food 2',
+      description: '123',
+      price: 300 / 100,
+      image: '/image/cocktails/avocado-and-banana.jpg',
+    },
+    {
+      id: 3,
+      name: 'food 3',
+      description: '123',
+      price: 300 / 100,
+      image: '/image/cocktails/avocado-and-banana.jpg',
+    },
   ];
 
   ngOnInit(): void {}

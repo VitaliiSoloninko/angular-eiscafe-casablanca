@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { COCKTAILS } from '../../data/drinks';
+import { COLD_DRINKS, HOT_DRINKS } from '../../data/drinks';
 import { IProduct } from '../../models/IProduct';
-import { ProductItemComponent } from '../../products/product-item/product-item.component';
 import { ProductListComponent } from '../../products/product-list/product-list.component';
 import { TitleComponent } from '../../title/title.component';
 
@@ -12,5 +11,6 @@ import { TitleComponent } from '../../title/title.component';
   styleUrl: './drink-page.component.scss',
 })
 export class DrinkPageComponent {
-  cocktails: IProduct[] = COCKTAILS;
+  coldDrinks: IProduct[] = COLD_DRINKS;
+  hotDrinks: IProduct[] = HOT_DRINKS;
 }

@@ -7,7 +7,7 @@ import { TitleComponent } from '../../title/title.component';
 
 @Component({
   selector: 'app-drink-page',
-  imports: [ProductItemComponent, TitleComponent, ProductListComponent],
+  imports: [TitleComponent, ProductListComponent],
   templateUrl: './drink-page.component.html',
   styleUrl: './drink-page.component.scss',
 })

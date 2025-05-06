@@ -3,9 +3,12 @@
     <a href="" class="item-image">
       <img [src]="product.image" alt="Image" />
     </a>
-    <a href="" class="item-price">{{
-      product.price | currency : "EUR" : "symbol"
-    }}</a>
+    <div class="item-number">
+      {{ product.id }}
+    </div>
+    <div class="item-price">
+      {{ product.price | currency : "EUR" : "symbol" }}
+    </div>
   </div>
   <div class="item-body">
     <h4 class="item-title">

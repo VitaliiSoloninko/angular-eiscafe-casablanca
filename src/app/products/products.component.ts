@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { IProduct } from '../models/IProduct';
 import { TitleComponent } from '../title/title.component';
-import { ProductItemComponent } from './product-item/product-item.component';
 import { ProductListComponent } from './product-list/product-list.component';
 
 @Component({
   selector: 'app-products',
-  imports: [ProductItemComponent, ProductListComponent, TitleComponent],
+  imports: [ProductListComponent, TitleComponent],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss',
 })

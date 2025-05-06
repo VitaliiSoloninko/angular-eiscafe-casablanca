@@ -1,4 +1,3 @@
-import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import {
@@ -12,7 +11,7 @@ import {
 
 @Component({
   selector: 'app-footer',
-  imports: [LucideAngularModule, RouterLink, NgIf],
+  imports: [LucideAngularModule, RouterLink],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
 })

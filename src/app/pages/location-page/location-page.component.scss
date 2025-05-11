@@ -40,10 +40,16 @@
 .contacts__item_email {
   background: url("/image/svg/mail.svg") 0 0 no-repeat;
 }
+.contacts__item_bus {
+  background: url("/image/svg/bus.svg") 0 0 no-repeat;
+}
+.contacts__item_school {
+  background: url("/image/svg/school.svg") 0 0 no-repeat;
+}
 
 .map__item {
   width: 85dvw;
-  max-width: 600px;
+  max-width: 550px;
   border-radius: 24px;
   overflow: hidden;
   display: flex;
@@ -54,7 +60,7 @@
 .item-image {
   position: relative;
   display: block;
-  padding-bottom: 65%; /* 194/394 */
+  padding-bottom: 83%;
 }
 .item-image img {
   position: absolute;

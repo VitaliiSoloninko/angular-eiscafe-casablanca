@@ -3,16 +3,19 @@
     <a href="" class="item-image">
       <img [src]="product.image" alt="Image" />
     </a>
-    <div class="item-number">
+    <!-- <div class="item-number">
       {{ product.id }}
-    </div>
+    </div> -->
     <div class="item-price">
       {{ product.price | currency : "EUR" : "symbol" }}
     </div>
   </div>
   <div class="item-body">
     <h4 class="item-title">
-      <a href="" class="item-link-title">{{ product.name | titlecase }}</a>
+      <a href="" class="item-link-title">{{ product.name | uppercase }}</a>
     </h4>
+    <div class="item-description">
+      {{ product.description }}
+    </div>
   </div>
 </div>

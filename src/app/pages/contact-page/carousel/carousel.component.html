@@ -14,6 +14,7 @@
 
   <div class="buttons">
     <button
+      class="button"
       iconStart="@tui.chevron-left"
       tuiIconButton
       type="button"
@@ -21,13 +22,9 @@
     >
       Previous
     </button>
-    <tui-pagination
-      size="s"
-      class="pagination"
-      [length]="items.length"
-      [(index)]="index"
-    />
+
     <button
+      class="button"
       iconStart="@tui.chevron-right"
       tuiIconButton
       type="button"
@@ -36,4 +33,10 @@
       Next
     </button>
   </div>
+  <tui-pagination
+    size="s"
+    class="pagination"
+    [length]="items.length"
+    [(index)]="index"
+  />
 </div>

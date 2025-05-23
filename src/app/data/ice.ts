@@ -87,7 +87,7 @@ export const ICE: IProduct[] = [
     name: 'BUBBLE GUM',
     description: '',
     price: price,
-    image: '/image/ice/marshmallow.jpeg',
+    image: '/image/ice/BUBBLE GUM.jpg',
   },
   {
     id: 13,

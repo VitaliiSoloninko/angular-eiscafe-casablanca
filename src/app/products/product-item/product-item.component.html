@@ -1,8 +1,8 @@
 <div class="product__item">
   <div class="item-header">
-    <a href="" class="item-image">
+    <div class="item-image">
       <img [src]="product.image" alt="Image" />
-    </a>
+    </div>
     <!-- <div class="item-number">
       {{ product.id }}
     </div> -->
@@ -12,7 +12,7 @@
   </div>
   <div class="item-body">
     <h4 class="item-title center">
-      <a href="" class="item-link-title">{{ product.name | uppercase }}</a>
+      <div class="item-link-title">{{ product.name | uppercase }}</div>
     </h4>
     <div class="item-description">
       {{ product.description }}

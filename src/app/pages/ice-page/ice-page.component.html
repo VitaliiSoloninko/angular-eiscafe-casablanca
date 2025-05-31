@@ -3,4 +3,41 @@
   <app-title title="Unsere Eissorten" />
 </div>
 
-<app-product-list [products]="ice" />
+<app-product-list [products]="ice" (productClick)="openModal($event)" />
+
+<!-- Modal -->
+<div
+  class="modal-backdrop"
+  *ngIf="selectedProduct"
+  (click)="closeModal()"
+></div>
+<div class="modal" *ngIf="selectedProduct">
+  <button class="modal-close" (click)="closeModal()">&#10005;</button>
+  <div class="product__item">
+    <div class="item-header">
+      <div class="item-image">
+        <img [src]="selectedProduct.image" alt="Image" />
+      </div>
+      <div class="item-price">
+        {{ selectedProduct.price | currency : "EUR" : "symbol" }}
+      </div>
+    </div>
+    <div class="item-body">
+      <h4 class="item-title center">
+        <div class="item-link-title">
+          {{ selectedProduct.name | uppercase }}
+        </div>
+      </h4>
+      <div class="item-description">
+        {{ selectedProduct.description }}
+      </div>
+    </div>
+
+    <!-- <img [src]="selectedProduct.image" alt="{{ selectedProduct.name }}" />
+    <h3>{{ selectedProduct.name }}</h3>
+    <p>{{ selectedProduct.description }}</p>
+    <p>
+      <strong>{{ selectedProduct.price | currency : "EUR" : "symbol" }}</strong>
+    </p> -->
+  </div>
+</div>

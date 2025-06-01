@@ -5,14 +5,15 @@
 
 <app-product-list [products]="ice" (productClick)="openModal($event)" />
 
-<!-- Modal -->
 <div
   class="modal-backdrop"
   *ngIf="selectedProduct"
   (click)="closeModal()"
 ></div>
 <div class="modal" *ngIf="selectedProduct">
-  <button class="modal-close" (click)="closeModal()">&#10005;</button>
+  <button class="modal-close" (click)="closeModal()">
+    <img src="/image/svg/x.svg" alt="x" />
+  </button>
   <div class="product__item">
     <div class="item-header">
       <div class="item-image">
@@ -32,12 +33,5 @@
         {{ selectedProduct.description }}
       </div>
     </div>
-
-    <!-- <img [src]="selectedProduct.image" alt="{{ selectedProduct.name }}" />
-    <h3>{{ selectedProduct.name }}</h3>
-    <p>{{ selectedProduct.description }}</p>
-    <p>
-      <strong>{{ selectedProduct.price | currency : "EUR" : "symbol" }}</strong>
-    </p> -->
   </div>
 </div>

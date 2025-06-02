@@ -1,4 +1,10 @@
 <div class="mb16 mt16">
   <app-title title="MOCKTAILS UND GETRÄNKE" />
 </div>
-<app-product-list [products]="coldDrinks" />
+<app-product-list [products]="coldDrinks" (productClick)="openModal($event)" />
+
+<app-product-modal
+  *ngIf="selectedProduct"
+  [product]="selectedProduct"
+  (close)="closeModal()"
+></app-product-modal>

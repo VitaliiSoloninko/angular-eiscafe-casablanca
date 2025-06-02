@@ -2,13 +2,13 @@
   <app-title title="KUCHEN" />
 </div>
 
-<app-product-list [products]="deserts" />
+<app-product-list [products]="deserts" (productClick)="openModal($event)" />
 
 <div class="mb16 mt16">
   <app-title title="Kaffee" />
 </div>
 
-<app-product-list [products]="hotDrinks" />
+<app-product-list [products]="hotDrinks" (productClick)="openModal($event)" />
 
 <div class="item mt16 mb16">
   <img src="/image/drinks-hot/Kaffee.jpg" alt="" />
@@ -18,4 +18,10 @@
   <app-title title="Tee" />
 </div>
 
-<app-product-list [products]="tea" />
+<app-product-list [products]="tea" (productClick)="openModal($event)" />
+
+<app-product-modal
+  *ngIf="selectedProduct"
+  [product]="selectedProduct"
+  (close)="closeModal()"
+></app-product-modal>

@@ -2,4 +2,10 @@
   <app-title [title]="'Essen'" />
 </div>
 
-<app-product-list [products]="foods" />
+<app-product-list [products]="foods" (productClick)="openModal($event)" />
+
+<app-product-modal
+  *ngIf="selectedProduct"
+  [product]="selectedProduct"
+  (close)="closeModal()"
+></app-product-modal>

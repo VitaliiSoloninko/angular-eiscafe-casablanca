@@ -25,6 +25,10 @@ export class HeaderComponent {
       link: 'desert',
     },
     {
+      name: 'Essen',
+      link: 'food',
+    },
+    {
       name: 'Kontakte',
       link: 'contact',
     },

@@ -2,6 +2,29 @@ $tablet: 991.98px;
 $mobile: 767.98px;
 $mobileSmall: 479.98px;
 
+.header-bg {
+  filter: invert(82%) sepia(74%) saturate(2443%) hue-rotate(335deg)
+    brightness(91%) contrast(84%);
+  position: fixed;
+  width: 100%;
+  top: -5px;
+  left: 0;
+  z-index: 99;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @media (max-width: $tablet) {
+    position: absolute;
+  }
+}
+
+.header-bg img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -13,6 +36,7 @@ $mobileSmall: 479.98px;
   padding-left: 1rem;
   padding-right: 1rem;
   background-color: var(--main-color);
+  height: 54px;
   @media (max-width: $tablet) {
     display: none;
   }
@@ -29,16 +53,6 @@ $mobileSmall: 479.98px;
       height: 60px;
       padding: 4px 0;
     }
-  }
-
-  // .header__logo
-  &__logo {
-    position: relative;
-    z-index: 5;
-  }
-
-  // .header__menu
-  &__menu {
   }
 
   // .header__actions

@@ -24,6 +24,7 @@
     "@taiga-ui/event-plugins": "^4.0.2",
     "@taiga-ui/icons": "^4.37.0",
     "@taiga-ui/kit": "^4.37.0",
+    "gsap": "^3.14.2",
     "lucide-angular": "^0.506.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
